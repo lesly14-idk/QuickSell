@@ -1,0 +1,563 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Carrito</title>
+
+        <link rel="preload" href="css/normalize.css" as="style">
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="preload" href="css/skeleton.css" as="style">
+
+        <link rel="stylesheet" href="css/skeleton.css">
+
+        <link rel="preload" href="css/styles.css" as="style">
+
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+
+
+
+    <body>
+
+        <header id="header" class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="four columns">
+
+                        <h1>QuickSell</h1>
+
+                        <p>Agrega y quita elementos del carrito</p>
+
+                    </div>
+
+                    <div class="two columns u-pull-right">
+
+                        <ul>
+
+                            <li class="submenu">
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+
+  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+
+</svg>
+
+
+
+<a href="../martin/login.html">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+
+</svg>
+
+</a>
+
+                               <!-- <img src="img/cart.png" id="img-carrito" alt="carrito"> -->
+
+   
+
+                               
+
+                                <div id="carrito">
+
+                                    <table id="lista-carrito" class="u-full-width">
+
+                                        <thead>
+
+                                            <tr>
+
+                                                <th>Imagen</th>
+
+                                                <th>Nombre</th>
+
+                                                <th>Precio</th>
+
+                                                <th>Cantidad</th>
+
+                                               
+
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody></tbody>
+
+                                    </table>
+
+
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+
+                                    <a href="#" id="comprar-carrito" class="button u-full-width">Comprar</a>
+
+                                </div>
+
+
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <div id="hero">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="six columns">
+
+                        <div class="contenido-hero">
+
+                            <h2>¡Ofertas todos los días!</h2>
+
+                            <p>40% de Descuento</p>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="barra">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="four columns icono icono1">
+
+                        <p>1,000 Nuevos Proveedores en línea <br>
+
+                            Explora los productos más recientes</p>
+
+                    </div>
+
+                    <div class="four columns icono icono2">
+
+                        <p>Buena calidad. <br>
+
+                            Hasta muchos colores</p>
+
+                    </div>
+
+                    <div class="four columns icono icono3">
+
+                        <p>Envios confiables y <br>
+
+                            Envios Rápidos</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div id="lista-cursos" class="container">
+
+            <h1 id="encabezado" class="encabezado">Articulos que te gustarían</h1>
+
+            <div class="row">
+
+                <div class="four columns">
+
+                    <div class="card" style="height: 100%;">
+
+                        <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>HTML5, CSS3, JS</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Comida Vegetariana</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Curso Guitarra</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+
+
+            </div> <!--.row-->
+
+            <div class="row">
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso4.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Masetas para un huerto. Barro Original</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$150</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Lote de velas esencia pino del bosque</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$400 <span class="u-pull-right ">$300</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso1.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Diseño Web</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+            </div> <!--.row-->
+
+            <div class="row">
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Cuadro de verduras</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$300 <span class="u-pull-right ">$150</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Guitarra Acustica</h4>
+
+                            <p>Lestradamus</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$1000 <span class="u-pull-right ">$750</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/chikawa_pluches.webp" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Pelucha Chikawa suave y tiernos</h4>
+
+                            <p>Ian Pluches</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+            </div> <!--.row-->
+
+            <div class="row">
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/tnis.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Tennis Converse Rojo AllStars</h4>
+
+                            <p>Converse</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$1900 <span class="u-pull-right ">$1500</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/pochita_pluche.jpg" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Peluche tierno Anime motocierra</h4>
+
+                            <p>Chainsaw</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$400 <span class="u-pull-right ">$270</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+                <div class="four columns">
+
+                    <div class="card">
+
+                        <img src="img/kirby_pluche.png" class="imagen-curso u-full-width">
+
+                        <div class="info-card">
+
+                            <h4>Kirby peluche Original</h4>
+
+                            <p>Nintendo</p>
+
+                            <img src="img/estrellas.png">
+
+                            <p class="precio">$600 <span class="u-pull-right ">$400</span></p>
+
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+
+                        </div>
+
+                    </div> <!--.card-->
+
+                </div>
+
+            </div> <!--.row-->
+
+        </div>
+
+
+
+        <footer id="footer" class="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="four columns">
+
+                        <nav id="principal" class="menu">
+
+                            <a class="enlace" href="#">Terminos y Condiciones</a>
+
+                            <a class="enlace" href="#">Trabaja con nosotros</a>
+
+                            <a class="enlace" href="#">Aplicaciones Móviles</a>
+
+                            <a class="enlace" href="#">Ayuda</a>
+
+                            <a class="enlace" href="#">Temas</a>
+
+                        </nav>
+
+                    </div>
+
+                    <div class="four columns">
+
+                        <nav id="secundaria" class="menu">
+
+                            <a class="enlace" href="#">¿Quienes Somos?</a>
+
+                            <a class="enlace" href="#">Empleo</a>
+
+                            <a class="enlace" href="#">Blog</a>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script src="js/app.js"></script>
+
+    </body>
+
+</html>
