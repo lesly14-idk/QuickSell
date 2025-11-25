@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuicksellAPI", "QuicksellAPI.csproj", "{B35D8F3F-E19C-A8F4-16E0-C153F5042C2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B35D8F3F-E19C-A8F4-16E0-C153F5042C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35D8F3F-E19C-A8F4-16E0-C153F5042C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35D8F3F-E19C-A8F4-16E0-C153F5042C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35D8F3F-E19C-A8F4-16E0-C153F5042C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92AFD108-9D8A-4AA4-91F2-F36E7956C5D6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@QuicksellAPI_HostAddress = http://localhost:5038
+
+GET {{QuicksellAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
